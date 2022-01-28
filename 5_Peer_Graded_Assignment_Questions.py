@@ -150,8 +150,6 @@ app.layout = html.Div(children=[
                 State("plot5", "children")
                ])
 
-@app.callback( Output(component_id='line-plot', component_property='figure'),
-               Input(component_id='input-year', component_property='value'))
 # Add computation to callback function and return graph
 def get_graph(chart, year, children1, children2, c3, c4, c5):
       
